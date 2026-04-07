@@ -1,29 +1,46 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OnlineStore</title>
+    <title>Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+
     <header>
         <h1> OnlineStore </h1>
             <nav> 
                 <a href="pages/products.html" target="__blank"> Produkty </a>    
                 <a href="pages/login.html" target="__blank"> Zaloguj się </a> 
                 <a href="pages/register.html" target="_blank"> Załóż konto</a> 
-                <a href="index.html"> Strona główna</a>
+                <a href="../index.html"> Strona główna</a>
              </nav>
     </header>
 
-    <main>
-        <h1 class="dupa">elooo</h1>
-        <h1> elooo</h1>
-        
+    <main class="login-page">
+        <div class="login-box">
+
+            <h1> Zaloguj się</h1>
+
+            <form class="login-form">
+                <input type="text" name="name"  id="name" placeholder="Nazwa użytkownika"> 
+                <input type="password" name="password" id="password" placeholder="Hasło">
+
+            
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">Zapamiętaj mnie </label>
+
+                
+                <button type="submit" class="btn">Zaloguj</button>
+            </form>
+            
+                <p> Nie masz jeszcze konta? <a href="/pages/register.html">Załóż konto</a></p>
+
+            </div>
     </main>
 
     <footer>

@@ -12,12 +12,16 @@
 <body>
 
     <header>
-        <h1> OnlineStore </h1>
-            <nav> 
-                <a href="pages/products.html" target="__blank"> Produkty </a>    
-                <a href="pages/login.html" target="__blank"> Zaloguj się </a> 
-                <a href="pages/register.html" target="_blank"> Załóż konto</a> 
+        <a href="../index.html"> <h1>OnlineStore</h1> </a>
+        
+            <nav class="nav-left"> 
                 <a href="../index.html"> Strona główna</a>
+                <a href="pages/products.html" target="__blank"> Produkty </a>    
+            </nav>
+            <nav class="nav-right">
+                <a href="pages/login.html" class="index-login-button" target="__blank"> Zaloguj się </a> 
+                <a href="pages/register.html" class="index-register-button" target="_blank"> Załóż konto</a> 
+                
              </nav>
     </header>
 
@@ -30,15 +34,16 @@
                 <input type="text" name="name"  id="name" placeholder="Nazwa użytkownika"> 
                 <input type="password" name="password" id="password" placeholder="Hasło">
 
-            
+            <div class="remember">
                 <input type="checkbox" name="remember" id="remember">
                 <label for="remember">Zapamiętaj mnie </label>
+            </div>
 
                 
-                <button type="submit" class="btn">Zaloguj</button>
+                <button type="submit" class="login-btn-login">Zaloguj</button>
             </form>
             
-                <p> Nie masz jeszcze konta? <a href="/pages/register.html">Załóż konto</a></p>
+                <p> Nie masz jeszcze konta? <a href="/pages/register.html">  Załóż konto</a></p>
 
             </div>
     </main>

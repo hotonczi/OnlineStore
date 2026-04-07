@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 a{
     text-decoration: none;
@@ -11,8 +12,11 @@ a:link, a:visited{
 }
 header{
     background-color: #2CE88B;
-    padding: 10px;
-
+    padding: 20px;
+    justify-content: space-between;
+    display: flex;
+    
+    
 }
 main{
     background-color: white;
@@ -24,38 +28,87 @@ footer{
     padding: 5px;
 
 }
-nav{
-    text-align: right;
+.nav-left{
+    align-items: center;
 }
-h1{
+.nav-right, .nav-left{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.h1-header{
     font-family: 'Poppins', sans-serif;
     color: #092e1c;
     text-align: left;
     font-weight: 800;
     
 }
-p{
-    font-family: 'Poppins', sans-serif;
-}
 
-.btn{
-    font-family: 'Poppins', sans-serif;
+
+.login-btn-login{
     color: #6befae;
     background-color: #092e1c;
     border-radius: 25px;
     height: 60px;
     width: 160px;
+    padding: 12px;
 }
-.btn:hover{
+    
+.login-btn-login:hover{
     background-color: #0d462a;
 }
 
 .login-box{
-    border:#092e1c solid;
-    border-radius: 4px;
-    padding: 1px;
+    
+    border-radius: 25px;
+    display: flex;
+    background-color: #eafdf3;
+    width: 600px;
+    padding: 90px;
+    flex-direction: column;
+    gap: 20px;
+    
 }
-#name{
-    border-radius: 3px;
-    border: dotted blue;
+.login-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+.login-form input{
+    padding: 15px;
+    border: 2px solid #04170e;
+    border-radius: 25px;
+    
+}
+.remember{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.login-box p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.index-login-button{
+    border: 1px solid #04170e;
+    border-radius: 25px;
+    padding: 10px 15px;
+}
+.index-register-button{
+    border: 1px solid #167446;
+    border-radius: 25px;
+    background-color: #167446;
+    padding: 10px 15px;
+}
+.login-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+    

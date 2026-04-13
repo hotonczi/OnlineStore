@@ -2,6 +2,7 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    
 }
 a{
     text-decoration: none;
@@ -59,8 +60,10 @@ footer{
 .login-btn-login:hover{
     background-color: #0d462a;
 }
-
-.login-box{
+.register-btn-register:hover{
+    background-color: #0d462a;
+}
+.login-box, .register-box{
     
     border-radius: 25px;
     display: flex;
@@ -72,23 +75,24 @@ footer{
     
     
 }
-.login-form{
+.login-form, .register-form{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.login-form input{
+.login-form input, .register-form input{
     padding: 15px;
     border: 2px solid #04170e;
     border-radius: 25px;
     
 }
+
 .remember{
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.login-box p{
+.login-box p, .register-box p{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -106,11 +110,16 @@ footer{
     background-color: #167446;
     padding: 10px 15px;
 }
-.login-page{
+.login-page, .register-page{
     display: flex;
     align-items: center;
     justify-content: center;
     
+}
+button{
+    border: none;
+    box-shadow: none;
+    outline: none;
 }
 
     

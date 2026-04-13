@@ -1,6 +1,7 @@
 *{
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 a{
     text-decoration: none;
@@ -46,7 +47,7 @@ footer{
 }
 
 
-.login-btn-login{
+.login-btn-login, .register-btn-register{
     color: #6befae;
     background-color: #092e1c;
     border-radius: 25px;
@@ -68,6 +69,7 @@ footer{
     padding: 90px;
     flex-direction: column;
     gap: 20px;
+    
     
 }
 .login-form{

@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    
+
+    <header>
+        <a href="../index.html"> <h1>OnlineStore</h1> </a>
+        
+            <nav class="nav-left"> 
+                <a href="../index.html"> Strona główna</a>
+                <a href="../pages/products.html" target="__blank"> Produkty </a>    
+            </nav>
+            <nav class="nav-right">
+                <a href="../pages/login.html" class="index-login-button" target="__blank"> Zaloguj się </a> 
+                <a href="pages/register.html" class="index-register-button" target="_blank"> Załóż konto</a> 
+                
+             </nav>
+    </header>
+
+    <main class="register-page">
+        <div class="register-box">
+
+            <form class="register-form">
+                <input type="email" name="mail" id="mail" placeholder="Adres e-mail" required>
+                <input type="text" name="name" id="name" placeholder="Nazwa użytkownika" required>
+                <input type="password" name="password" id="password" placeholder="Hasło" required>
+                <button type="submit" class="register-btn-register">Załóz konto</button>
+                <p> Masz już konto? <a href="../pages/login.html"> Zaloguj się </a></p>
+        
+            </form>
+
+        </div>
+    </main>
+
+    <footer>
+        gyugyu
+
+    </footer>
 </body>
 </html>

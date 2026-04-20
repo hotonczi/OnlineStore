@@ -7,7 +7,7 @@ fetch("https://fakestoreapi.com/products")
         data.forEach(product => {
             products.innerHTML += ` 
             <div class="products">
-                <img src="${product.image}" alt="">
+                <img src="${product.image}" alt="${product.title}">
                 <div class="content">
                     <h1> ${product.title} </h1>
                     <span class="price"> ${product.price} PLN </span>

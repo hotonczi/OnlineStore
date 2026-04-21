@@ -142,12 +142,14 @@ button{
     padding: 20px;
     object-fit: contain;
     
+    
 }
 .price, .content{
     color:#167446;
     letter-spacing: 1px;
     font-weight: 600;
     text-transform: uppercase;
+    padding: 20px;
     
 }
 .content h1{
@@ -156,6 +158,31 @@ button{
 }
 .products:hover{
     transform: translateY(-8px);
+}
+.products button{
+    border: 1px solid #167446;
+    border-radius: 25px;
+    background-color: #167446;
+    padding: 10px 15px;
+
+}
+.products button:hover{
+    background-color: #0d462a;
+}
+.category {
+    color:gray;
+    padding: 20px;
+}
+
+aside{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+#SortByPrice{
+    border-radius: 20px;
+    padding: 10px;
+    color: #092e1c;
 }
 
 

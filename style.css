@@ -184,6 +184,11 @@ aside{
     padding: 10px;
     color: #092e1c;
 }
+.img-cart{
+    width: auto;
+    height: 35px;
+    object-fit: contain;
+}
 
 
 

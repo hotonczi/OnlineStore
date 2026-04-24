@@ -23,7 +23,7 @@ fetch("https://fakestoreapi.com/products")
 function showProducts(data){
     products.innerHTML = "";
         data.forEach(product => {
-            products.innerHTML += ` 
+            const pr = ` 
             <div class="products">
                 <img src="${product.image}" alt="${product.title}">
                 <div class="content">
@@ -31,11 +31,42 @@ function showProducts(data){
                     <span class ="category"> ${product.category} </span>
                     <span class="price"> ${product.price} PLN </span>
                     
-                    <button id="btnAdd"> Dodaj do koszyka </button>
+                    <button class="btnAdd" data-id="${product.id}"> Dodaj do koszyka </button>
 
                 </div>
             </div>`;
-        });
+            products.innerHTML += pr;
+
+            });
+            document.querySelectorAll(".btnAdd").forEach(btn => {
+                btn.addEventListener("click", () => {
+                    const id = btn.dataset.id;
+
+                    const product = data.find(p => p.id == id);
+
+                    addToCart(product);
+
+                })
+            })
 }
 
+function addToCart(product){
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    let existing = cart.find(p => p.id === product.id);
+
+    if(existing){
+        existing.quantity += 1;
+    } else{
+        cart.push({
+            id: product.id,
+            title: product.title,
+            price: product.price,
+            image: product.image,
+            quantity: 1
+        });
+
+    }
+    localStorage.setItem("cart", JSON.stringify(cart));
+};
     

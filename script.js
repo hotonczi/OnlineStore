@@ -1,7 +1,8 @@
 let products = document.getElementById("productContainer");
 let SortByPrice = document.getElementById("SortByPrice")
 
-fetch("https://fakestoreapi.com/products")
+if(products) {
+    fetch("https://fakestoreapi.com/products")
     .then(response => response.json())
     .then(data => {
         showProducts(data);
@@ -19,6 +20,7 @@ fetch("https://fakestoreapi.com/products")
             showProducts(sortedProducts);
         })
     });
+};
 
 function showProducts(data){
     products.innerHTML = "";
@@ -69,4 +71,34 @@ function addToCart(product){
     }
     localStorage.setItem("cart", JSON.stringify(cart));
 };
-    
+
+function loadCart(){
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    const container = document.getElementById("cartContainer");
+    const totalEl = document.getElementById("total");
+
+    container.innerHTML = "";
+
+    let total = 0;
+
+    cart.forEach((item, index) => {
+        const div = document.createElement("div");
+        div.classList.add("cart-item");
+
+        div.innerHTML = `
+            <img src="${item.image}" width="80">
+            <div>
+                <h3>${item.title}</h3>
+                <p>${item.price} PLN x ${item.quantity}</p>
+                <button onclick="removeItem(${index})">Usuń</button>
+            </div>
+        `;
+
+        container.appendChild(div);
+
+        total += item.price * item.quantity;
+    });
+
+    totalEl.textContent = total.toFixed(2);
+}

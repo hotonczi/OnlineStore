@@ -12,21 +12,27 @@
 <body>
     <header>
         
-        <a href="index.html"> <h1 class="h1-header">OnlineStore</h1> </a>
+        <a href="../index.html"> <h1 class="h1-header">OnlineStore</h1> </a>
             <nav class="nav-left"> 
                 <a href="../index.html"> Strona główna</a>
-                <a href="pages/products.html"> Produkty </a>    
+                <a href="../pages/products.html"> Produkty </a>    
             </nav>
             <nav class="nav-right">
                 <a href="../pages/cart.html"> <img src="../cart.webp" class="img-cart" alt=""></a>
-                <a href="pages/login.html" class="index-login-button"> Zaloguj się </a> 
-                <a href="pages/register.html" class="index-register-button"> Załóż konto</a> 
+                <a href="../pages/login.html" class="index-login-button"> Zaloguj się </a> 
+                <a href="../pages/register.html" class="index-register-button"> Załóż konto</a> 
                 
              </nav>
     </header>
 
     <main>
-        
+        <h1>Koszyk</h1>
+
+        <div id="cartContainer"></div>
+
+        <h2>Suma: <span id="total">0</span> PLN</h2>
+
+        <button onclick="clearCart()"> Wyczyść koszyk </button>
         
     </main>
 
@@ -34,5 +40,7 @@
         gyugyu
 
     </footer>
+    <script src="../script.js"></script>
+    <script> loadCart(); </script>
 </body>
 </html>

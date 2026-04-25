@@ -189,7 +189,43 @@ aside{
     height: 35px;
     object-fit: contain;
 }
-
+.cart-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+}
+.cart-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #167446;
+    border-radius: 20px;
+    padding: 20px;
+    transition: 0.3s ease;
+}
+.cart-item:hover{
+    transform: translateY(-5px);
+}
+.cart-item img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.cart-item h3{
+    color: black;
+    font-size: 16px;
+}
+.cart-main button{
+    margin-left: auto;
+    border: 1px solid #167446;
+    border-radius: 25px;
+    background-color: #167446;
+    padding: 8px 14px;
+}
+.cart-main button:hover{
+    background-color: #0d462a;
+}
 
 
 

@@ -7,10 +7,10 @@ Aplikacja pobiera produkty z API, umożliwia ich filtrowanie oraz dodawanie do k
 Piotr Bączyk - GitHub: @hotonczi
 
 ⚙️ Technologie
-HTML5
-CSS3 
-JavaScript (ES6+)
-FakeStore API (https://fakestoreapi.com/)
+- HTML5
+- CSS3 
+- JavaScript (ES6+)
+- FakeStore API (https://fakestoreapi.com/)
 
 🚀 Funkcjonalności
 
@@ -26,7 +26,7 @@ FakeStore API (https://fakestoreapi.com/)
 💻 Instalacja
 
 1. Sklonuj repozytorium:
-    git clone https://github.com/twojusername/onlinestore.git
+    git clone https://github.com/hotonczi/OnlineStore.git
 
 2. Otwórz plik:
     index.html
